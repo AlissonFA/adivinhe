@@ -31,7 +31,9 @@ Os principais destaques do desenvolvimento incluem:
 
 ## 🛠️ Ferramentas
 
-* **Git & GitHub:** Versionamento e deploy da aplicação.
+* **Git:** Controle de versão do projeto.
+* **GitHub:** Hospedagem e gerenciamento do repositório.
+* **Vercel:** Deploy e hospedagem da aplicação.
 
 ## 🔖 Layout
 
