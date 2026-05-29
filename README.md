@@ -3,7 +3,7 @@
 <p align="center">
   <a href="#-o-projeto">O Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-ferramentas">Ferramentas</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#️-ferramentas">Ferramentas</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-layout">Layout</a>
 </p>
 
@@ -30,6 +30,7 @@ Os principais destaques do desenvolvimento incluem:
 * **Vite:** Configuração do ambiente de desenvolvimento e build da aplicação.
 
 ## 🛠️ Ferramentas
+
 * **Git & GitHub:** Versionamento e deploy da aplicação.
 
 ## 🔖 Layout
