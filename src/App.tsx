@@ -19,10 +19,12 @@ export default function App() {
   const ATTEMPTS_MARGIN = 5;
 
   function handleRestartGame() {
-    const isConfirmed = window.confirm("Você tem certeza que deseja reiniciar?")
+    const isConfirmed = window.confirm(
+      "Você tem certeza que deseja reiniciar?",
+    );
 
-    if(isConfirmed) {
-      startGame()
+    if (isConfirmed) {
+      startGame();
     }
   }
 
@@ -52,7 +54,7 @@ export default function App() {
     );
 
     if (exists) {
-      setLetter("")
+      setLetter("");
       return alert("Você já utilizou a letra " + value);
     }
 

@@ -1,9 +1,9 @@
-import styles from "./styles.module.css"
-import tipIcon from "../../assets/tip.svg"
+import styles from "./styles.module.css";
+import tipIcon from "../../assets/tip.svg";
 
 type Props = {
-  tip: string,
-}
+  tip: string;
+};
 
 export function Tip({ tip }: Props) {
   return (
@@ -15,5 +15,5 @@ export function Tip({ tip }: Props) {
         <p>{tip}</p>
       </div>
     </div>
-  )
+  );
 }

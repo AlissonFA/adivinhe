@@ -1,13 +1,13 @@
-import logo from "../../assets/logo.png"
-import restart from "../../assets/restart.svg"
+import logo from "../../assets/logo.png";
+import restart from "../../assets/restart.svg";
 
-import styles from "./styles.module.css"
+import styles from "./styles.module.css";
 
 type Props = {
-  current: number,
-  max: number,
-  onRestart: () => void
-}
+  current: number;
+  max: number;
+  onRestart: () => void;
+};
 
 export function Header({ current, max, onRestart }: Props) {
   return (
@@ -24,5 +24,5 @@ export function Header({ current, max, onRestart }: Props) {
         </button>
       </header>
     </div>
-  )
+  );
 }
