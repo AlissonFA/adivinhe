@@ -1,73 +1,49 @@
-# React + TypeScript + Vite
+<h1 align="center">Adivinhe</h1>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<p align="center">
+  <a href="#-o-projeto">O Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-ferramentas">Ferramentas</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-layout">Layout</a>
+</p>
 
-Currently, two official plugins are available:
+<p align="center">
+  <img src="./src/assets/preview.png" width="100%" alt="Preview do projeto Adivinhe" />
+</p>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 💻 O Projeto
 
-## React Compiler
+**Adivinhe** é um jogo de adivinhação de palavras do universo da programação. A cada rodada, o jogador recebe uma dica e deve descobrir a palavra oculta digitando uma letra por vez — antes de esgotar o limite de tentativas.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Os principais destaques do desenvolvimento incluem:
 
-## Expanding the ESLint configuration
+1. **Componentização da interface:** A aplicação foi dividida em componentes reutilizáveis como `Header`, `Tip`, `Letter`, `Input`, `Button` e `LettersUsed`, tornando o código mais organizado, modular e fácil de manter.
+2. **Gerenciamento de estado com React Hooks:** Múltiplos `useState` controlam os dados do jogo (palavra sorteada, letras utilizadas, pontuação), enquanto `useEffect` é utilizado para inicializar a partida e reagir às alterações de estado quando necessário.
+3. **CSS Modules para isolamento de estilos:** Cada componente possui seu próprio arquivo `.module.css`, garantindo escopo de estilos sem conflitos e tornando a manutenção do visual mais organizada.
+4. **TypeScript com tipos customizados:** Interfaces como `Challenge` e `LettersUsedProps` garantem tipagem segura em todo o fluxo da aplicação, desde o banco de palavras até os componentes responsáveis pela exibição das informações.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 🚀 Tecnologias
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+* **React:** Criação da interface com componentes reutilizáveis (`Header`, `Tip`, `Letter`, `Input`, `Button`, `LettersUsed`) e controle da lógica do jogo com `useState` e `useEffect`.
+* **TypeScript:** Tipagem estática com tipos e interfaces customizados para os dados do jogo, evitando erros em tempo de desenvolvimento.
+* **CSS:** Responsável pela estilização da interface e experiência visual da aplicação.
+* **Vite:** Configuração do ambiente de desenvolvimento e build da aplicação.
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+## 🛠️ Ferramentas
+* **Git & GitHub:** Versionamento e deploy da aplicação.
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## 🔖 Layout
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Você pode visualizar e interagir com o projeto através dos links abaixo:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+* 📲 **[Acesse o layout original do projeto aqui](https://www.figma.com/community/file/1453366829725330797)**
+* 👉 **[Acesse o site funcionando aqui](https://alissonfa.github.io/adivinhe/)**
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+**Para rodar no seu computador (Local):**
+1. Faça o download ou clone o repositório.
+2. Na raiz do projeto, instale as dependências com `npm install`.
+3. Inicie o servidor de desenvolvimento com `npm run dev` e acesse `http://localhost:5173`.
+
+---
+
+Feito com 💜 por **[AlissonFA](https://www.linkedin.com/in/alissonfa/)**
